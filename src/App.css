@@ -1,0 +1,244 @@
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Landing Page CSS*/
+.dropdown-container {
+  display: inline-block;
+  position: fixed;
+  margin: 2vh 2vh;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: whitesmoke;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none; 
+  transition: opacity 0.3s ease; 
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1; 
+  pointer-events: auto;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+
+
+.name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25vh;
+  gap: 20px;
+}
+.name h2 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+.name h4 {
+  color: white;
+  font-size: 1.4em;
+  margin-top: 3vh;
+}
+.front-box p{
+  color: white;
+  font-size: 1.7em;
+}
+.front-box{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 8vh;
+}
+.tech{
+  color: white;
+  font-size: 2em;
+}
+.lucide-chevron-right-square {
+  transition: fill 0.3s, stroke 0.3s; 
+  cursor: pointer;
+}
+.lucide-chevron-right-square:hover {
+  transform: scale(1.2);
+}
+.lucide-chevron-left-square {
+  transition: fill 0.3s, stroke 0.3s; 
+  cursor: pointer;
+}
+.lucide-chevron-left-square:hover {
+  transform: scale(1.2);
+}
+/*About component css*/
+.about-heading{
+  color: white;
+  text-align: center;
+  font-size: 2.8rem;
+}
+.Skills{
+  color: white;
+  display: flex;
+  padding: 2em;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  max-width: 100%;
+  box-sizing: border-box; 
+  flex-wrap: wrap;
+}
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 365px) {
+  .Skills{
+    flex-direction:column;
+    text-align: center;
+  }
+  .partition{
+    display: none;
+  }
+  
+}
+@media (max-width: 777px) {
+  .projects{
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects .Card {
+    margin-bottom: 1.5em; 
+  }
+}
+.Card {
+  margin-bottom: 2em;
+}
+
+@media (max-width: 777px) {
+  .Card {
+    width: 80%;
+  }
+}
+.Navigate{
+  text-align: center;
+  margin-top: 1em;
+}
+.projects{
+  display: flex;
+  justify-content: space-around;
+  margin: 10vh 0vh;
+}
+.github{
+  display: flex;
+  justify-content:center;
+}
+/*Skill component css*/
+.coding-platform svg{
+  justify-content: space-between;
+}
+
+/*Contact component css*/
+.contact-details {
+  width: 50%;
+  min-height: 70vh;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  margin: 2em 20em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+@media (max-width: 768px) {
+  .contact-details {
+    width: 80%; 
+    align-items: center;
+    margin: 2em auto; 
+  }
+}
+
+@media (max-width: 676px) {
+  .contact-details {
+    width: 90%; 
+    align-items: center;
+    margin: 2em auto;
+  }
+}
+.input-box {
+  width: 70%;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  height: 40vh;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.send-button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 2.6em;
+}
+.send-button:hover {
+  opacity: 0.7;
+}
+.send-request{
+  display: flex;
+  justify-content: space-between;
+  gap: 5em;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px; 
+  margin-top: 2em;
+}
+
+.footerText {
+  color: white;
+  margin: 0; 
+}
+
+
+
+
+
