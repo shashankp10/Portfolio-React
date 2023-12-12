@@ -16,16 +16,16 @@ function App() {
     setLoading(true)
     setTimeout(()=>{
       setLoading(false)
-    },1000)
+    },3000)
   },[])
   return (
     <div className="app-container">
       {loading ? (
         <div className="loader-container">
           <ClipLoader
-            color={'#739ED8'}
+            color={'#36d7b7'}
             loading={loading}
-            size={20}
+            size={10}
             aria-label="Loading Spinner"
             data-testid="loader"
           />

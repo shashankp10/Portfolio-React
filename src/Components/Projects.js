@@ -2,6 +2,7 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
+import DropDown from './DropDown';
 
 export default function Projects() {
   const linkStyle = {
@@ -9,6 +10,7 @@ export default function Projects() {
   };
   return (
     <>
+      <DropDown/>
       <h1 className="about-heading">Projects</h1>
       <div className='projects'>
         <Card style={{ 

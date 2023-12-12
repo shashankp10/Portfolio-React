@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import SkillCard from './SkillCard';
+import DropDown from './DropDown';
 export default function About() {
   return (
     <div>
+      <DropDown/>
       <h1 className="about-heading">About Me</h1>
       <div className='Skills'>
         <SkillCard/>
