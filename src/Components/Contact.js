@@ -1,10 +1,16 @@
-import React, {useRef} from 'react'
+import React, {useRef,useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import emailjs from '@emailjs/browser';
 import DropDown from './DropDown';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Contact() {
+  useEffect(()=>{
+    Aos.init({duration:2000});
+  },[])
+
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,11 +23,10 @@ export default function Contact() {
           console.log(error.text);
       });
   };
-  
   return (
     <>  
       <DropDown/>
-      <div className='contact-details'>
+      <div className='contact-details' data-aos="flip-left">
         <h1 className="about-heading">Contact Me</h1>
         <div className='input-field'>
           <form ref={form} onSubmit={sendEmail}>

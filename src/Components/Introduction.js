@@ -2,17 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import DropDown from './DropDown';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Introduction() {
+  useEffect(()=>{
+    Aos.init({duration:2000});
+  },[])
   return (
     <div className='main'>
       <DropDown/>
       <div className='details'>
-      <div className='name'>
+      <div className='name'  data-aos="fade-right">
         <h4>I'm</h4>
         <h2>Shashank Pandey</h2>
       </div>
-      <div className="front-box">
+      <div className="front-box" data-aos="zoom-out-right">
         <p>Proficient in</p>
         <div class="tech">
           <Typewriter

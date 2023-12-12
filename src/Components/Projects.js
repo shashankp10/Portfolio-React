@@ -1,24 +1,29 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import DropDown from './DropDown';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Projects() {
   const linkStyle = {
     textDecoration: 'none',
   };
+  useEffect(()=>{
+      Aos.init({duration:3000});
+  },[])
   return (
     <>
       <DropDown/>
-      <h1 className="about-heading">Projects</h1>
+      <h1 className="about-heading" data-aos="fade-right">Projects</h1>
       <div className='projects'>
-        <Card style={{ 
-          width: '18rem', 
+        <Card style={{ width: '18rem', 
           background: 'rgba(255, 255, 255, 0.1)', 
           border: '1px solid white',
-          color:'white',
-          }}>
+          color:'white',transition: 'transform 0.3s', }} data-aos="fade-left"
+          onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.07)')}
+          onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')} >
           <Card.Body>
             <Card.Title>CollegeEazy</Card.Title>
             <Card.Subtitle><br/>Spring Boot, React.js, MySQL, JWT Authentication</Card.Subtitle>
@@ -29,12 +34,12 @@ export default function Projects() {
             <Card.Link as={Link} to="https://collegeeazy.vercel.app/" style={linkStyle} target="_blank" rel="noopener noreferrer">Website</Card.Link>
           </Card.Body>
         </Card>
-        <Card style={{ 
-          width: '18rem', 
+        <Card style={{ width: '18rem', 
           background: 'rgba(255, 255, 255, 0.1)', 
           border: '1px solid white',
-          color:'white',
-           }}>
+          color:'white',transition: 'transform 0.3s', }} data-aos="fade-left"
+          onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.07)')}
+          onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')} >
           <Card.Body>
             <Card.Title>Desh Ke Innovator</Card.Title>
             <Card.Subtitle><br/>Spring Boot, React.js, MySQL</Card.Subtitle>
@@ -44,10 +49,12 @@ export default function Projects() {
             <Card.Link as={Link} to="https://github.com/shashankp10/DeshKeInnovators" style={linkStyle} target="_blank" rel="noopener noreferrer">Code</Card.Link>
             {/* <Card.Link as={Link} to="" style={linkStyle} target="_blank" rel="noopener noreferrer">Website</Card.Link> */}
           </Card.Body>
-        </Card><Card style={{width: '18rem', 
+        </Card><Card style={{ width: '18rem', 
           background: 'rgba(255, 255, 255, 0.1)', 
           border: '1px solid white',
-          color:'white', }}>
+          color:'white',transition: 'transform 0.3s', }} data-aos="fade-left"
+          onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.07)')}
+          onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')} >
           <Card.Body>
             <Card.Title>Hack Mentor</Card.Title>
             <Card.Subtitle><br/>Spring Boot, React.js, MySQL, Langchain</Card.Subtitle>
@@ -57,10 +64,13 @@ export default function Projects() {
             <Card.Link as={Link} to="https://github.com/shashankp10/chatbot-integrated-with-OpenAI" style={linkStyle} target="_blank" rel="noopener noreferrer">Code</Card.Link>
             {/* <Card.Link as={Link} to="" style={linkStyle} target="_blank" rel="noopener noreferrer">Website</Card.Link> */}
           </Card.Body>
-        </Card><Card style={{ width: '18rem', 
+        </Card>
+        <Card style={{ width: '18rem', 
           background: 'rgba(255, 255, 255, 0.1)', 
           border: '1px solid white',
-          color:'white', }}>
+          color:'white',transition: 'transform 0.3s', }} data-aos="fade-left"
+          onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.07)')}
+          onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}>
           <Card.Body>
             <Card.Title>Amazone Clone</Card.Title>
             <Card.Subtitle><br/>HTML, CSS, Javascript</Card.Subtitle>

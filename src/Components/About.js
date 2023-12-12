@@ -1,13 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import SkillCard from './SkillCard';
 import DropDown from './DropDown';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 export default function About() {
+  useEffect(()=>{
+    Aos.init({duration:2000});
+  },[])
   return (
     <div>
       <DropDown/>
-      <h1 className="about-heading">About Me</h1>
-      <div className='Skills'>
+      <h1 className="about-heading" data-aos="fade-right">About Me</h1>
+      <div className='Skills' data-aos="flip-left">
         <SkillCard/>
       </div>
       <div className='Navigate'>
