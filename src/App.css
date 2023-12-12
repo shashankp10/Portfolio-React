@@ -56,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 25vh;
+  padding-top: 20vh;
   gap: 20px;
 }
 .name h2 {
@@ -69,6 +69,7 @@
   .name{
     flex-direction:column;
     text-align: center;
+    padding-top: 12vh;
   }
 }
 .name h4 {
