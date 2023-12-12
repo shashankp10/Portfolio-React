@@ -11,9 +11,10 @@ export default function DropDown() {
             </svg>
           </button>
           <div class="dropdown-content">
-            <Link to="/contact">Contact</Link>
+            <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/project">Projects</Link>
+            <Link to="/contact">Contact</Link>
             <Link to="https://docs.google.com/document/d/1xNi_vSxQQvh0ivs4-jY-3333qjJiaILe3pTVQXqUFsQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer" >Resume</Link>
           </div>
         </div>
