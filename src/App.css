@@ -65,6 +65,12 @@
   font-size: 3em;
 }
 
+@media (max-width: 500px) {
+  .name{
+    flex-direction:column;
+    text-align: center;
+  }
+}
 .name h4 {
   color: white;
   font-size: 1.4em;
@@ -110,10 +116,9 @@
   padding: 2em;
   margin: 0 auto;
   justify-content: space-evenly;
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 400;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  max-width: 100%;
   box-sizing: border-box; 
   flex-wrap: wrap;
 }
@@ -127,11 +132,11 @@
   .Skills{
     flex-direction:column;
     text-align: center;
+    font-size: 0.7em;
+    font-weight: 200;
+    align-items: center;
+    justify-content: space-around;
   }
-  .partition{
-    display: none;
-  }
-  
 }
 @media (max-width: 777px) {
   .projects{
