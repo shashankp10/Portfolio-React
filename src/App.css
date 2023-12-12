@@ -51,15 +51,16 @@
 
 .dropdown-content {
   position: absolute;
-  background: transparent;
   color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   z-index: 1;
+  background-color: #092038f5;
   opacity: 0;
   pointer-events: none; 
   transition: opacity 0.3s ease; 
   left: 0;
   top: 100%;
+  
 }
 
 .dropdown:hover .dropdown-content {
@@ -78,7 +79,7 @@
 }
 
 .dropdown-content a:hover {
-  color: #007bffb2;
+  color: #2982e2;
   scale: 1.3;
 }
 
@@ -161,11 +162,11 @@
   justify-content: center;
   text-align: center;
 }
-@media (max-width: 365px) {
+@media (max-width: 450px) {
   .Skills{
+    width: 100%;
     flex-direction:column;
     text-align: center;
-    font-size: 0.7em;
     font-weight: 200;
     align-items: center;
     justify-content: space-around;
