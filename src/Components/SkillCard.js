@@ -29,7 +29,7 @@ function SkillCard() {
         return (
           <>
             <Card.Text>
-              I am an undergraduate student majoring in Computer Science and Engineering at Guru Gobind Singh Indraprastha University (2021-2025). My interests include Full-Stack Web Development and Problem Solving using DSA with Java
+              I am an undergraduate student majoring in Computer Science and Engineering at Guru Gobind Singh Indraprastha University (2021-2025).<br/><br/> My professional interests include Java Full-Stack Development and Problem Solving using DSA with Java.
             </Card.Text>
           </>
         );
