@@ -1,3 +1,15 @@
+.app-container {
+  position: relative;
+}
+
+.loader-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .background {
   position: fixed;
   width: 100%;
@@ -201,8 +213,13 @@
     align-items: center;
     margin: 2em auto; 
   }
+  
 }
-
+@media (max-width: 440px){
+  .coding-platform{
+    flex-direction: column;
+  }
+}
 @media (max-width: 676px) {
   .contact-details {
     width: 90%; 
