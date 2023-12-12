@@ -180,6 +180,7 @@
 .contact-details {
   width: 50%;
   min-height: 70vh;
+  border-radius: 5px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid white;
   color: white;
@@ -188,6 +189,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center; 
+}
+.contact-details p{
+  justify-content: space-around;
+  display:flex;
+  padding: 0 2em;
 }
 @media (max-width: 768px) {
   .contact-details {

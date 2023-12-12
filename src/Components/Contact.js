@@ -15,6 +15,7 @@ export default function Contact() {
     <>
       <h1 className="about-heading">Contact</h1>
       <div className='contact-details'>
+        <p>I'm seeking for opportunities. Drop me a message for internship / freelance positions or connect on Linkedin</p>
         <input type="text" className="input-box" placeholder="Your message" />
         <div className='send-request'>
           <Link to="https://www.linkedin.com/in/shashank-pandey-782997229/" target="_blank" >

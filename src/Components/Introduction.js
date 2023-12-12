@@ -16,7 +16,7 @@ export default function Introduction() {
             <Link to="/contact">Contact</Link>
             <Link to="/about">About</Link>
             <Link to="/projects">Projects</Link>
-            <Link to="https://www.linkedin.com/in/shashank-pandey-782997229/overlay/1635546625603/single-media-viewer/?profileId=ACoAADlGyJIBwNup3SvG8yQ9LOE7Dk260DYVli8" target="_blank" rel="noopener noreferrer" >Resume</Link>
+            <Link to="https://drive.google.com/file/d/1xkAwiYpAM9AdikuuMsbTDcMc8w6ivxqy/view" target="_blank" rel="noopener noreferrer" >Resume</Link>
           </div>
         </div>
       </div>
