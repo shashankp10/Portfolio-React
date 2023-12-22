@@ -49,7 +49,8 @@ export default function Projects() {
             <Card.Link as={Link} to="https://github.com/shashankp10/DeshKeInnovators" style={linkStyle} target="_blank" rel="noopener noreferrer">Code</Card.Link>
             {/* <Card.Link as={Link} to="" style={linkStyle} target="_blank" rel="noopener noreferrer">Website</Card.Link> */}
           </Card.Body>
-        </Card><Card style={{ width: '18rem', 
+        </Card>
+        <Card style={{ width: '18rem', 
           background: 'rgba(255, 255, 255, 0.1)', 
           border: '1px solid white',
           color:'white',transition: 'transform 0.3s', }} data-aos="fade-left"
@@ -79,6 +80,22 @@ export default function Projects() {
             </Card.Text>
             <Card.Link as={Link} to="https://github.com/shashankp10/Amazon-Clone" style={linkStyle} target="_blank" rel="noopener noreferrer">Code</Card.Link>
             <Card.Link as={Link} to="https://shashankp10.github.io/Amazon-Clone/" style={linkStyle} target="_blank" rel="noopener noreferrer">Website</Card.Link>
+          </Card.Body>
+        </Card>
+        <Card style={{ width: '18rem', 
+          background: 'rgba(255, 255, 255, 0.1)', 
+          border: '1px solid white',
+          color:'white',transition: 'transform 0.3s', }} data-aos="fade-left"
+          onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.07)')}
+          onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')} >
+          <Card.Body>
+            <Card.Title>Career Boot</Card.Title>
+            <Card.Subtitle><br/>Spring Boot, React.js, MySQL, Machine Learning</Card.Subtitle>
+            <Card.Text>
+            <br/>Career Boot provides the best community base for learners and beginners with all the top rated content with help of machine learning.
+            </Card.Text>
+            <Card.Link as={Link} to="https://github.com/shashankp10/carrierboot" style={linkStyle} target="_blank" rel="noopener noreferrer">Code</Card.Link>
+            <Card.Link as={Link} to="https://career-boot-project.vercel.app/" style={linkStyle} target="_blank" rel="noopener noreferrer">Website</Card.Link>
           </Card.Body>
         </Card>
       </div>
