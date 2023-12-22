@@ -22,7 +22,7 @@ export default function Introduction() {
         <div class="tech">
           <Typewriter
             options={{
-              strings: ["Java","Data structures and Algorithm", "Web Development"],
+              strings: ["Web Development","Java","Data structures and Algorithm"],
               autoStart: true,
               loop: true,
             }}

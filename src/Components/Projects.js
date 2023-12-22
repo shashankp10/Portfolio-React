@@ -72,7 +72,7 @@ export default function Projects() {
           onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.07)')}
           onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}>
           <Card.Body>
-            <Card.Title>Amazone Clone</Card.Title>
+            <Card.Title>Amazon Clone</Card.Title>
             <Card.Subtitle><br/>HTML, CSS, Javascript</Card.Subtitle>
             <Card.Text>
             <br/>Attempted to create a frontend clone of the online shopping platform Amazon.
