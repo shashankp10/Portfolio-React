@@ -57,14 +57,14 @@ function SkillCard() {
           <>
             <Card.Text>
               <ul>
-                <li>Codechef (Max Rating: 1577, 2 Star)</li>
-                <li>Codeforces (Max Rating: 1212, Pupil)</li>
-                <li>Leetcode (Max Rating: 1715, 550+ Q)</li>
+                <li>Codechef (Max Rating: 1602, 3★)</li>
+                <li>Codeforces (Max Rating: 1160, Newbie)</li>
+                <li>Leetcode (Max Rating: 1715, 600+ Q)</li>
                 <li>Top 10 among 120 teams in SIH’23, Inter-college</li>
                 <li>Top 20 among 100 teams in HackBPIT’23 Hackathon for Health Management System</li>
                 <li>Participated in 7+ Hackathons including BuildForFuture held at DTU, Live the code 2.0, Innovation invasion</li>
                 <li>Chess Tournament at Regional Level Under-17</li>
-                <li>Tech Lead at Google Development Student Club</li>
+                <li>Techical Team Lead at Google Development Student Club</li>
               </ul>
             </Card.Text>
           </>
