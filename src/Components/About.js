@@ -29,19 +29,20 @@ export default function About() {
   const handleCardClick = (index) => {
     setSelectedCard(index);
     setShowDetailCard(true);
-    document.body.classList.add('backgroundBlur');
   };
   const closeDetailCard = () => {
     setSelectedCard(null);
     setShowDetailCard(false);
-    document.body.classList.remove('backgroundBlur');
   };
 
   const introduction = [
     {
       title: 'About Me',
       image: require('../Assests/60111.jpg'),
-      content: 'I am an undergraduate student majoring in Computer Science and Engineering at Guru Gobind Singh Indraprastha University (2021-2025). Proficient in Java Full-Stack Development and Problem Solving and DSA with Java',
+      content: (<>
+      I am an undergraduate student majoring in Computer Science and Engineering at Guru Gobind Singh Indraprastha University (2021-2025). <br/>Proficient in Java Full-Stack Development and Problem Solving and DSA.
+      </>
+      )
     },
   ];
 
@@ -138,11 +139,11 @@ export default function About() {
     <div>
       <DropDown/>
       <h1 className="about-heading" data-aos="fade-right">About Me</h1>
-      <div className='Skills' data-aos="flip-left">
+      <div className="Skills" data-aos="flip-left">
         {allData.map((card, index) => (
           <div className='cardSkill' key={index} onClick={() => handleCardClick(index)}>
             <h4>{card.title}</h4>
-            <img src={card.image} alt={card.title} />
+            <img src={card.image} alt={card.title}/>
           </div>
         ))}
       </div>
