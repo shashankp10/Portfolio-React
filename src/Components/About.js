@@ -34,7 +34,7 @@ export default function About() {
     zIndex: 10,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     backdropFilter: 'blur(8px)',
-    transition: 'opacity 0.3s ease',
+    transition: 'opacity 0.5s ease',
     opacity: showDetailCard ? 1 : 0,
   };
   
@@ -58,10 +58,21 @@ export default function About() {
 
   const introduction = [
     {
-      title: 'About Me',
+      title: 'Introduction',
       image: require('../Assests/60111.jpg'),
-      content: (<>
-      I am an undergraduate student majoring in Computer Science and Engineering at Guru Gobind Singh Indraprastha University (2021-2025). <br/>Proficient in Java Full-Stack Development and Problem Solving and DSA.
+      content: (
+      <>
+        <ul>
+          <li>
+            I'm a Computer Science and Engineering student at Guru Gobind Singh Indraprastha University (2021-2025), with a keen interest in Web Development (Java Full-Stack) and Problem Solving using Java.
+          </li>
+          <li>
+            Proficient in Java, Spring Boot, React JS, and MySQL, I have hands-on experience in crafting robust solutions.
+          </li>
+          <li>
+            Currently serving as a Technical Team Lead at Google Developer Student Clubs (GDSC) and member of the Codechef ADGITM Chapter Society.
+          </li>
+        </ul>
       </>
       )
     },
@@ -177,7 +188,7 @@ export default function About() {
           />
         </div>
       )}
-      
+
       <div className='Navigate'>
         <Link to="/">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-left-square">
