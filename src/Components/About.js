@@ -21,7 +21,23 @@ const DetailCard = ({ onClose, title, content }) => {
 export default function About() {
   const [showDetailCard, setShowDetailCard] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
-
+  
+  const backgroundBlurStyle = {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 10,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backdropFilter: 'blur(8px)',
+    transition: 'opacity 0.3s ease',
+    opacity: showDetailCard ? 1 : 0,
+  };
+  
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -29,11 +45,16 @@ export default function About() {
   const handleCardClick = (index) => {
     setSelectedCard(index);
     setShowDetailCard(true);
+    setIsCardOpen(true);
   };
+  
   const closeDetailCard = () => {
     setSelectedCard(null);
     setShowDetailCard(false);
+    setIsCardOpen(false);
   };
+  
+  const [isCardOpen, setIsCardOpen] = useState(false);
 
   const introduction = [
     {
@@ -148,7 +169,7 @@ export default function About() {
         ))}
       </div>
       {showDetailCard && selectedCard !== null && (
-        <div className='backgroundBlur'>
+        <div style={backgroundBlurStyle} className='backgroundBlur'>
           <DetailCard
             onClose={closeDetailCard}
             title={allData[selectedCard].title}
@@ -156,7 +177,7 @@ export default function About() {
           />
         </div>
       )}
-
+      
       <div className='Navigate'>
         <Link to="/">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-left-square">

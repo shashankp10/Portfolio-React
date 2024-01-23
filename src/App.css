@@ -272,7 +272,7 @@
   font-weight: bolder;
   font-size: 1.8em;
 }
-.backgroundBlur {
+/* .backgroundBlur {
   position: fixed;
   top: 0;
   left: 0;
@@ -282,15 +282,13 @@
   align-items: center;
   justify-content: center;
   z-index: 10;
-}
-.blur {
-  filter: blur(5px); 
-  pointer-events: none; 
-}
-.initial {
-  filter: none; /* Reset filter for initial configuration */
-  pointer-events: auto; /* Enable click events for the initial configuration */
-}
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(8px); 
+  transition: opacity 0.3s ease;
+  opacity: ${isCardOpen ? 1 : 0}; 
+} 
+*/
+
 .detailCard {
   background: white;
   padding: 20px;
