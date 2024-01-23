@@ -47,7 +47,7 @@ export default function Projects() {
             <br/>Built to provide a platform to school students to share their ideas to collaborate with mentors to convert their ideas into a reality.
             </Card.Text>
             <Card.Link as={Link} to="https://github.com/shashankp10/DeshKeInnovators" style={linkStyle} target="_blank" rel="noopener noreferrer">Code</Card.Link>
-            {/* <Card.Link as={Link} to="" style={linkStyle} target="_blank" rel="noopener noreferrer">Website</Card.Link> */}
+            {<Card.Link as={Link} to="https://desh-ke-innovators.vercel.app/" style={linkStyle} target="_blank" rel="noopener noreferrer">Website</Card.Link>}
           </Card.Body>
         </Card>
         <Card style={{ width: '18rem', 
